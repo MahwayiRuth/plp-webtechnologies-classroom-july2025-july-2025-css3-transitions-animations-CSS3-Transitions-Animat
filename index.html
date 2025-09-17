@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khensani Ruth Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Khensani Ruth" class="logo">
+    <h1>Khensani Ruth</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hi, I'm Khensani Ruth</h2>
+      <p>Web developer passionate about building responsive, user-friendly websites that dance across screens with style!</p>
+      <button id="viewProjects">View Projects</button>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Khensani Ruth" class="hero-img"> <!-- Added class for animation -->
+    </div>
+  </section>
+
+  <div class="theme-toggle">
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </div>
+
+  <main class="main">
+    <section class="content" id="projects">
+      <h2>My Projects</h2>
+      <div class="card-container" id="projectCards">
+        <article class="card" tabindex="0">
+          <div class="card-inner"> <!-- Added for card flip -->
+            <div class="card-front">
+              <h3>Task Manager App</h3>
+              <button class="expand-btn">View Details</button>
+            </div>
+            <div class="card-back">
+              <div class="project-details">
+                <p>Unleash your productivity with this magical Task Manager App! Crafted with JavaScript and local storage, it transforms chaos into order with a flick of a button—add, edit, and conquer tasks like a coding wizard!</p>
+                <a href="https://mahwayiruth.github.io/task-manager/" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card" tabindex="0">
+          <div class="card-inner"> <!-- Added for card flip -->
+            <div class="card-front">
+              <h3>My Website Portfolio</h3>
+              <button class="expand-btn">View Details</button>
+            </div>
+            <div class="card-back">
+              <div class="project-details">
+                <p>Step into my digital masterpiece! This Portfolio Site is a vibrant showcase of my HTML, CSS, and JavaScript prowess, where interactive magic and responsive elegance collide to tell my coding story with a splash of color!</p>
+                <a href="https://mahwayiruth.github.io/My-Website-Portfolio/" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside id="about">
+      <h3>About Me</h3>
+      <p>I'm a web developer and student with a passion for learning and creating digital wonders that light up the internet!</p>
+      <h3>Contact Me</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="remarks" placeholder="Your Questions/Remarks" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formFeedback"></p>
+      <!-- Added modal for Part 3 -->
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out, I'll get back to you soon!</p>
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
+      <h3>Additional Contact</h3>
+      <ul>
+        <li>Email: ruthmahwayi@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/MahwayiRuth">MahwayiRuth</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <p id="welcomeMessage" style="display: none;">Welcome, Khensani! Press any key to see this.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
